@@ -43,7 +43,7 @@
         <bpelx:pattern patternName="bpelx:transformation"></bpelx:pattern>
       </bpelx:annotation>
       <copy>
-        <from>ora:doXSLTransformForDoc("../Transformations/Transformation_1.xsl", $Receive1_Validate_InputVariable.part1)</from>
+        <from>ora:doXSLTransformForDoc("../Transformations/${{REPLACEME}}", $Receive1_Validate_InputVariable.part1)</from>
         <to variable="Reply1_Validate_OutputVariable" part="part1"/>
       </copy>
     </assign>
