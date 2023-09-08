@@ -31,7 +31,7 @@
         <interface.wsdl interface="http://oracle.com/sca/soapservice/e2e-1201-composites/ValidatePayment/ValidatePayment#wsdl.interface(validatePaymentPortType)"/>
       </service>
     </componentType>
-    <property name="bpel.config.transaction" type="xs:string" many="false">required</property>
+    <property name="bpel.config.transaction" type="xs:string" many="false">${{REPLACEME}}</property>
   </component>
   <wire>
     <source.uri>ValidatePayment</source.uri>
